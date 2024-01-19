@@ -1,3 +1,9 @@
+from flask import Flask,request,render_template
+import json,requests,time
+headers = {
+    "Authorization" : "Token r8_GlGXr2syCVBA4jyVVQDm54qxTMNSTIg3AVg1w",
+    "Content-Type" : "application/json"
+}
 app = Flask(__name__)
 @app.route("/",methods=["GET","POST"])
 def index():
